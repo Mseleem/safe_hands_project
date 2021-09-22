@@ -26,6 +26,7 @@ html,body {
 .navbar, .navbar-expand-lg {
     background-color: #fff;
     padding-left: 10px;
+    z-index: 2;
 }
 .navigation--container--ul li, .navigation--container--ul li a {
     margin-right: 10px;
@@ -85,9 +86,16 @@ html,body {
 
 
 /*<!--Header-body-->*/
+
+.safe-hands-span{
+    font-size: 1.8rem; 
+    font-weight: bold; 
+    color:#D7ACAC;
+}
 .header-body-container {
     margin: 0 auto;
     margin-top: 3rem;
+    padding-bottom: 4rem;
 }
 .header-body-container .row {
     justify-content: space-evenly;
@@ -128,10 +136,12 @@ html,body {
 
 .header-body-img {
     display: flex;
-    padding-bottom: 1.8rem;
+    padding-bottom: 3rem;
 }
 .header-body-img img {
 justify-content: center;
+/* box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px; */
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .appointment-bttn-1, .register-button, .appointment-bttn-2 {
@@ -177,6 +187,7 @@ justify-content: center;
 #post-body{
     padding-top: 4rem;
     background-color: #fff;
+    padding-bottom: 1rem;
 }
 .post-body-punch {
     width: 100%;
@@ -192,9 +203,10 @@ justify-content: center;
     margin: 0 auto;
     margin-top: 5rem;
 }
-.post-body-container-icons row {
+.post-body-container-icons .row {
     text-align: center;
     margin: 0 auto;
+    justify-content: space-evenly;
 }
 
 .post-body-container-icons-item {
@@ -203,17 +215,34 @@ justify-content: center;
     justify-content: space-evenly;
     text-align: center;
     margin-bottom: 3rem;
+    /* border: 1px solid #eee; */
+    padding: 20px 5px;
+    border-radius: 10px;
+    /* box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px; */
+    max-width: 250px;
+    transition: box-shadow 0.3s ease-in-out;
 }
+
+.post-body-container-icons-item:hover {
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+
+
+
 .post-body-container-icons-item i {
-    font-size: 4rem;
-    color: #34fe;
+    font-size: 6rem;
+    color: #D7ACAC;
+    margin-bottom: 20px;
 }
+
 .post-body-container-icons-item p {
-    font-size: 1.2rem;
+    font-size: 1.12rem;
 }
 .post-body-container-icons-item {
     margin-bottom: 1rem;
 }
+
+
 
 /*<!--Footer-->*/
 
@@ -275,6 +304,7 @@ address {
 .card {
     width: 100% !important;
     border-radius: 10px;
+    padding-left: 3rem;
 }
 .card ul li {
     list-style: none;

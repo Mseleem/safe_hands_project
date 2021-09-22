@@ -297,7 +297,17 @@ address {
 }
 
 /*Max Width 750px*/
-@media screen and (max-width: 750px) {
+@media only screen and (max-width: 750px) {
+    .footer-parts{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-parts-col-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .footer-parts .row {
         text-align: center;
     }
@@ -305,9 +315,18 @@ address {
         margin: 0 auto;
         width: 240px;
     }
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
     .social-links-icons {
         text-align: center;
         width: 90px;
         margin: 0 auto;
     }
+}
+
+/*Calendar*/
+.ftco-section{
+    z-index: 0
 }
